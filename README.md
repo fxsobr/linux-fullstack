@@ -71,7 +71,7 @@ realizando os seguintes passos:
 	> sudo nano /etc/apache2/sites-available/FlaskApp.conf
 - Adicionado arquivo de configuração do arquivo .conf
 
-    ![ScreenShot](https://github.com/fxsobr/linux-fullstack)
+    ![ScreenShot](https://github.com/fxsobr/linux-fullstack/blob/master/wsgi.png?raw=true)
 
 - Habilitado o novo virtual host criado
     > sudo a2ensite FlaskApp
@@ -81,7 +81,7 @@ realizando os seguintes passos:
 	> sudo nano flaskapp.wsgi 
 - Editado o arquivo flaskapp.wsgi
 
-    ![ScreenShot](https://github.com/fxsobr/linux-fullstack)
+    ![ScreenShot](https://github.com/fxsobr/linux-fullstack/blob/master/flaskapp.png?raw=true)
 
 - Reiniciado apache
 
@@ -144,6 +144,24 @@ realizando os seguintes passos:
     > ssh grader@104.248.232.241 -p 2200 -i caminho_da_chave_privada
 - Informar senha contidada dentro da chave rsa
 
+###Acessando banco de dados
+- Para acessar o banco utilizar o seguinte comando
+    > sudo su - catalog
+- Depois informar o comando
+    > psql
+- Para listar as tabelas utilizar o comando
+    > \dt
+    
+    ![ScreenShot](https://github.com/fxsobr/linux-fullstack/blob/master/flaskapp.png?raw=true)
+- Verificar conteúdo das tabelas
+    > SELECT * FROM categoria;
+    
+    > SELECT * FROM produto;
+    
+    > SELECT * FROM usuario;
+    
+  ![ScreenShot](https://github.com/fxsobr/linux-fullstack/blob/master/flaskapp.png?raw=true)  
+    
 ### Acessando o site da aplicação
 - Para acessar o site clique
     [Aqui](http://104.248.232.241/)
