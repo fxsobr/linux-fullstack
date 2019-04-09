@@ -144,7 +144,7 @@ realizando os seguintes passos:
     > ssh grader@104.248.232.241 -p 2200 -i caminho_da_chave_privada
 - Informar senha contidada dentro da chave rsa
 
-###Acessando banco de dados
+### Acessando banco de dados
 - Para acessar o banco utilizar o seguinte comando
     > sudo su - catalog
 - Depois informar o comando
